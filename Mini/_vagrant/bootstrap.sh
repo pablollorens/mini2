@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
 
 # Use single quotes instead of double quotes to make it work with special-character passwords
-PASSWORD='12345678'
-PROJECTFOLDER='myproject'
+#PASSWORD='12345678'
+echo -n "Enter password for the database"
+read PASSWORD
+
+#PROJECTFOLDER='myproject'
+echo -n "Write name for the project folder"
+read PROJECTFOLDER
 
 # create project folder
 sudo mkdir "/var/www/html/${PROJECTFOLDER}"
